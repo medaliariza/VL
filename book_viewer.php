@@ -1,0 +1,3 @@
+<?php session_start(); require_once 'config.php'; $file = isset($_GET['file'])?basename($_GET['file']):''; $path = __DIR__.'/books/'.$file; if(!$file || !file_exists($path)) die('Book not found'); ?>
+<!doctype html><html><head><meta charset='utf-8'><title><?php echo esc($file); ?></title><link rel='stylesheet' href='assets/css/style.css'></head><body>
+<main class='container'><h2><?php echo esc($file); ?></h2><iframe src='books/<?php echo rawurlencode($file); ?>' width='100%' height='700px'></iframe></main></body></html>

@@ -1,0 +1,1 @@
+:root{--v-base:#f7efe2;--v-dark:#2b2d2f;--v-accent:#8b5e3c}body{font-family:Arial,sans-serif;background:var(--v-base);color:var(--v-dark);margin:0}header.top-nav{padding:12px;background:linear-gradient(90deg,#fff8f0,#f7efe2);}main.container{padding:16px}.book-card{transition:transform .18s}.book-card:hover{transform:translateY(-6px)}
